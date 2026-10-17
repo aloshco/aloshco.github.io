@@ -3,106 +3,548 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sahrora — Privacy Policy</title>
+<meta name="description" content="What Sahrora: Quiz Night Party collects, why, who handles it, how long it is kept and how to delete it. English and Arabic.">
 <style>
  :root{color-scheme:dark}
  *{box-sizing:border-box}
- body{margin:0;background:#12101f;color:#f2f0ff;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+ body{margin:0;background:#12101f;color:#f2f0ff;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Arabic","Geeza Pro",sans-serif}
  .wrap{max-width:720px;margin:0 auto;padding:48px 20px 80px}
  h1{font-size:1.9rem;margin:0 0 .2em}
  h2{font-size:1.1rem;margin:2em 0 .5em;color:#c9c2ff}
+ h3{font-size:1rem;margin:1.4em 0 .4em;color:#e4e0ff}
  p,li{margin:0 0 .8em}
- ul{padding-left:1.2em}
- a{color:#a78bfa}
+ ul,ol{padding-left:1.2em}
+ [dir=rtl] ul,[dir=rtl] ol{padding-left:0;padding-right:1.2em}
+ section[lang=ar]{font-size:1.05rem;line-height:1.85}
+ a{color:#a78bfa;overflow-wrap:anywhere}
  .date{color:#8f89ab;font-size:.9rem;margin-bottom:2em}
+ .box{background:#1b1830;border:1px solid #2b2740;border-radius:12px;padding:14px 18px 4px;margin:0 0 1.4em}
+ .langs{display:flex;gap:.5em;justify-content:flex-end;margin:0 0 1.5em}
+ .langs a{padding:.2em .85em;border:1px solid #2b2740;border-radius:999px;text-decoration:none;font-size:.95rem}
+ .langs a[aria-current=true]{background:#2b2740;color:#f2f0ff}
+ footer{margin-top:3em;padding-top:1.5em;border-top:1px solid #2b2740;color:#8f89ab;font-size:.9rem}
+ footer a{margin:0 1.2em 0 0;display:inline-block}
+ [dir=rtl] footer a{margin:0 0 0 1.2em}
 </style></head><body><div class="wrap">
+<nav class="langs" aria-label="Language"><a href="#en" data-lang="en">English</a><a href="#ar" data-lang="ar" lang="ar">العربية</a></nav>
+
+<!-- ═══════════════════════════ ENGLISH ═══════════════════════════ -->
+<section id="en" data-lang="en" lang="en" dir="ltr">
 <h1>Privacy Policy</h1>
-<p class="date">Sahrora · last updated 14 October 2026</p>
+<p class="date">Sahrora: Quiz Night Party · effective date 16 October 2026</p>
 
-<p>This policy describes what Sahrora collects, why, and what stays on your
-phone. It covers the Sahrora app on iOS and Android.</p>
+<p>This policy explains what the Sahrora app collects, why, who else handles it,
+how long it is kept and how you can delete it. It covers Sahrora on iPhone and
+iPad (App Store) and on Android (Google Play). Sahrora is made by Mohammad Sami
+(“we”, “us”).</p>
 
-<h2>You do not need to give us anything to play</h2>
-<p>Sahrora creates an <strong>anonymous account</strong> for you automatically.
-It is a random identifier with no email address, phone number or real name
-attached. You can play the whole app without ever signing in.</p>
-<p>If you choose to sign in with Google or Apple — so your progress survives a
-new phone — our authentication provider (Google Firebase Authentication) then
-holds the name and email address that service gives us.</p>
-
-<h2>What we store about you</h2>
+<div class="box">
+<p><strong>The short version</strong></p>
 <ul>
-<li><strong>Your profile</strong>: the display name you type and the avatar you
-pick.</li>
-<li><strong>Your results</strong>: Arcade runs and Quiz Night games played, points, accuracy, medals and achievements, so your stats screen works and your progress follows your account to a new phone.</li>
-<li><strong>Coins</strong>: a ledger of the coins you earn in the app, so a
-reward cannot be claimed twice.</li>
-<li><strong>Rooms</strong>: who is in a room you host or join, by display name, and their scores. Rooms are deleted after they expire. There is no free-text chat in rooms — players can only send a few fixed phrases (like "Get ready!") and sounds.</li>
-<li><strong>Question reports</strong>: if you tap Report this question, we store which question it was, the reason you chose and your account's random identifier, so we can fix the question. Reports are never shown to other players.</li>
-<li><strong>Player reports and blocks</strong>: if you report or block another player, we store the report (room code, the player's display name and the reason) so we can act on it. Blocks are kept with your account.</li>
-<li><strong>Purchases</strong>: handled by Apple or Google. We receive a receipt
-confirming what you bought — never your card details.</li>
+<li>You can play without signing up. The app makes an anonymous account for you.</li>
+<li>We keep your display name, avatar, region, game results and coins on Google Firebase, so rooms work and your progress can follow you.</li>
+<li>The free version shows Google AdMob ads. Every ad request is marked as child-directed and limited to general-audience (G) content, so ads in Sahrora are not personalised.</li>
+<li>We never use GPS and never ask for your contacts, photos or microphone. The camera is used only to scan a room’s QR code, on your phone.</li>
+<li>You can delete your account in the app, or ask us by email. See <a href="/sahrora/support/#delete">Delete your data</a>.</li>
+</ul>
+</div>
+
+<h2>1. Your account</h2>
+<p>When you first open Sahrora it creates an <strong>anonymous account</strong>:
+a random identifier with no email address, phone number or real name attached.
+You can play the whole app this way.</p>
+<p>If you choose to sign in — with Google (iPhone and Android) or with Apple
+(iPhone and iPad only) — so that your progress survives a new phone, our sign-in
+provider (Google Firebase Authentication) also holds the name and email address
+that Google or Apple gives us. Signing in keeps the same account; nothing you
+have already played is lost.</p>
+
+<h2>2. What we store on our servers</h2>
+<p>These are stored with Google Firebase (Firestore and Realtime Database):</p>
+<ul>
+<li><strong>Your profile</strong>: the display name you type (or a fun name the app makes up until you choose one), the avatar you pick from the app’s own set, and your region (country). Other players can see your name and avatar in a room you share, and your region where the app shows it.</li>
+<li><strong>Your results</strong>: games played, wins, points, questions answered and correct, best streaks, medals and similar counters, so your stats work and follow your account. If leaderboards are switched on, your display name, avatar and region appear next to your score.</li>
+<li><strong>Coins and daily limits</strong>: your coin balance and a ledger of the coins you earn and spend, and counters such as how many rooms you started today, so a reward or a free play cannot be claimed twice.</li>
+<li><strong>Rooms</strong>: the room code, who is in it (display name and avatar), scores, who is ready, Team Battle picks, and the fixed phrases (like “Get ready!”) and sounds players send. There is <strong>no free-text chat</strong>. Rooms are private by default; if a host makes a room public, it appears in a list of open rooms with the host’s display name and region. Rooms are deleted automatically after they end (see section 12).</li>
+<li><strong>Friends</strong> (only where this feature is switched on): your six-character friend code, your friends list, friend requests and room invites.</li>
+<li><strong>Question reports</strong>: if you tap <em>Report this question</em>, we store which question, the reason you chose, the language and your account’s random identifier, so we can fix the question.</li>
+<li><strong>Player reports</strong>: if you report a player, we store your account’s random identifier, the reported player’s identifier, the room code, the name you reported and the time, so we can act on it. Reports are never shown to other players, and the reported player is not told who reported them.</li>
+<li><strong>Notification tokens</strong>: for each phone where you allow notifications, a delivery token with the phone’s platform, app language and whether the weekly reminder is on.</li>
 </ul>
 
-<h2>Location</h2>
-<p><strong>We do not use GPS.</strong> The app reads your device's region setting to choose the app language and to put the question categories for your country first; that region is saved with your profile and your stats. Our advertising partner, Google AdMob, may work out an approximate location (such as your country or city) from your internet (IP) address — see Google's policy in the Advertising section.</p>
+<h2>3. What stays on your phone</h2>
+<p>Your progress in <strong>Learn</strong> (stars, stickers, levels, streaks and
+personal bests), your Arcade best scores and game picks, your settings, the list
+of players you have <strong>blocked</strong>, and the app’s activity log are
+stored on your device only. Blocks do not move to a new phone. The log leaves
+your phone only if you choose <em>Share app log</em>. The only thing Learn sends
+anywhere is the coins it awards, which go to the coin ledger above.</p>
 
-<h2>What stays on your phone</h2>
-<p>Your progress in the <strong>Learn</strong> section — lesson stars, stickers,
-levels cleared, the daily sprint streak and your personal bests — is stored on
-your device only. So are your Arcade best scores, the games you picked for your
-runs, and your settings. The only thing Learn sends anywhere is the coins it
-awards, which go to the coin ledger above.</p>
+<h2>4. Location</h2>
+<p><strong>We do not use GPS</strong> and the app has no location permission.
+Sahrora reads your device’s region setting to choose the app language and to put
+the question categories for your country first. That region is saved with your
+profile and stats, and you can change it in <strong>You → Account</strong>.</p>
+<p>Google AdMob and Google Firebase Analytics may work out an
+<strong>approximate location</strong> (such as your country or city) from your
+internet (IP) address. Sahrora itself never asks for or stores your precise
+location.</p>
 
-<h2>Analytics and crash reports</h2>
-<p>We use Google Firebase Analytics to understand which features are used and
-Firebase Crashlytics to find crashes and performance data (app start-up and
-slow-frame timings). These record events such as "a run
-started" together with your app language, whether you subscribe, and roughly
-how many games you have played. They do not receive your name or email.</p>
+<h2>5. Advertising</h2>
+<p>The free version shows ads from <strong>Google AdMob</strong>:</p>
+<ul>
+<li><strong>Videos you choose to watch</strong> (rewarded ads) — for example to play beyond the free daily allowance, or to open some question categories for 24 hours.</li>
+<li><strong>Full-screen ads at breaks</strong> (interstitials) — for example around a solo Arcade run, after a game or race in a room has finished, or when you join a room. The exact places differ between iPhone and Android and can change.</li>
+<li><strong>Small banner ads</strong> may appear on the Home screen, in a room’s waiting screen and in Settings.</li>
+</ul>
+<p>There are <strong>no ads anywhere in Learn</strong>, and none in the middle
+of a question. Sahrora+ and the one-time <em>Remove Ads</em> purchase remove the
+banner and full-screen ads.</p>
 
-<h2>Advertising</h2>
-<p>The free version shows ads from Google AdMob: a video you can <em>choose</em> to watch — to play beyond the free daily allowance, or to open some question categories for 24 hours — and short interstitial ads after a solo game, after a game or race in a room has finished, and after you join a room. There are <strong>no ads anywhere in the Learn section</strong>, no banners, and none during a game or a question. Sahrora+ and the one-time Remove Ads purchase remove the interstitial ads.</p>
-<p>Every ad request Sahrora makes is tagged for <strong>child-directed
-treatment</strong> and limited to <strong>general-audience (G) content</strong>.
-Because of that tag, Google does not use your advertising identifier to
-personalise the ads you see.</p>
-<p>On iOS, Sahrora asks whether you will allow tracking. If you allow it, Google may receive your device's advertising identifier with ad requests, to measure ads and to stop the same ad repeating; because of the child-directed tag it is not used to personalise ads. If you say no, or never answer, the identifier is not shared and nothing in the app changes. You can change your answer at any time in iOS Settings → Privacy &amp; Security → Tracking.</p>
-<p>Google's own privacy policy covers what it does with ad data:
+<h3>Child-directed and G-rated ad requests</h3>
+<p>Every ad request Sahrora makes, on both platforms, is tagged for
+<strong>child-directed treatment</strong> (and as from a user under the age of
+consent) and limited to <strong>general-audience (G) content</strong>. Because
+of these tags, Google does not show personalised (interest-based) ads in
+Sahrora.</p>
+
+<h3>What Google receives</h3>
+<p>To show, measure and protect ads, Google’s Mobile Ads SDK collects information
+from your device, such as your IP address (from which an approximate location can
+be estimated), the advertising identifier and app set ID where available, device
+and app information, how you interact with ads, and diagnostic data. Google uses
+this under its own policy, for advertising, analytics and fraud prevention:
 <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
-<h2>Notifications</h2>
-<p>Sahrora sends notifications only if you allow them. They are calls from other players in a room you are in — for example "Call everyone" from the host, or "Get ready!" from a player — and an optional weekly reminder, which stays off unless you turn it on. To deliver them we store a notification token for each of your devices with your account; it is deleted when you sign out or delete your account. You can turn notifications off at any time in the app's Settings or in iOS Settings → Notifications.</p>
+<h3>Android advertising ID</h3>
+<p>On Android, the Google Mobile Ads SDK and Google Firebase Analytics can read
+your device’s <strong>advertising ID</strong>. Because of the child-directed tag,
+it is not used to personalise the ads you see in Sahrora. You can reset or delete
+your advertising ID at any time in Android
+<strong>Settings → Privacy → Ads</strong> (on some phones,
+<strong>Settings → Google → Ads</strong>).</p>
 
-<h2>What we never do</h2>
+<h3>iPhone and iPad: the tracking question</h3>
+<p>On iOS, Sahrora asks whether you will allow tracking. If you allow it, Google
+may receive your device’s advertising identifier with ad requests, to measure ads
+and to stop the same ad repeating; because of the child-directed tag it is not
+used to personalise ads. If you say no, or never answer, the identifier is not
+shared and nothing in the app changes. You can change your answer at any time in
+iOS <strong>Settings → Privacy &amp; Security → Tracking</strong>.</p>
+
+<h3>Consent in Europe and the UK</h3>
+<p>Where the law requires it (for example in the EEA, the UK and Switzerland),
+Google’s consent form appears before any ad is requested. You can change your
+answer later in <strong>You → Settings → Manage privacy choices</strong>; that
+row appears only where it applies.</p>
+<p>Saw an ad that should not be there? <strong>You → Settings → Report an
+ad</strong>.</p>
+
+<h2>6. Analytics and crash reports</h2>
+<p>We use <strong>Google Firebase Analytics</strong> to understand which features
+are used. It records events such as “a run started” or “a game finished”,
+together with your app and questions language, whether you subscribe, your answer
+to the iOS tracking question, and roughly how many games you have played (in
+bands, not an exact count). Like any Firebase app it also receives device and app
+information (model, system version, app version), an app instance ID, an
+approximate location from your IP address and, on Android, the advertising ID.
+It does not receive your name, your email or anything you type.</p>
+<p>We use <strong>Google Firebase Crashlytics</strong> to find crashes and
+errors. A crash report contains technical details (device model, system version,
+app version, what the app was doing) and your account’s random identifier, so we
+can match a crash to the game that caused it.</p>
+<p>We use <strong>Google Firebase Remote Config</strong> to change settings
+(for example, which features are switched on) without an app update. When the
+app fetches them, Google receives basic device and app information.</p>
+
+<h2>7. Notifications</h2>
+<p>Sahrora sends notifications only if you allow them. They are calls from other
+players in a room you are in — for example the host’s “Call everyone”, the host
+calling you by name, or a fixed phrase like “Get ready!” — and an optional weekly
+reminder, which stays off unless you turn it on. To deliver them we store a
+notification token for each of your devices (Google Firebase Cloud Messaging; on
+iPhone, through Apple’s push service). A token is deleted when you sign out or
+delete your account, and dropped when it stops working. You can turn
+notifications off at any time in the app’s Settings, in iOS
+<strong>Settings → Notifications → Sahrora</strong>, or in Android
+<strong>Settings → Apps → Sahrora → Notifications</strong>.</p>
+
+<h2>8. Camera and QR codes</h2>
+<p>The camera is used for one thing: scanning a room’s QR code when you choose
+<em>Scan QR code</em>. Camera images are processed <strong>on your
+phone</strong> and are never uploaded or stored.</p>
 <ul>
-<li>We do not sell your data, and we do not share it with data brokers.</li>
-<li>We do not ask for your contacts, your photo library or your microphone.
-Sahrora's Kids lessons <em>speak</em> to you using your device's own text-to-speech;
-nothing is recorded.</li>
-<li>The camera is used for one thing — scanning a room's QR code to join it —
-and that image is processed on your phone and never uploaded.</li>
+<li>On <strong>Android</strong>, the scanning is done by <strong>Google ML Kit</strong> (through Google Play services), on the device. ML Kit may send Google basic device and app information and usage and performance statistics — not the camera images — to keep the service working. Google says it does not share this data with third parties.</li>
+<li>On <strong>iPhone and iPad</strong>, the scanning is done by Apple’s built-in tools on the device.</li>
 </ul>
 
-<h2>Children</h2>
-<p>Sahrora is a general-audience app and is not directed to children under 13.
-The Learn section includes lessons written for young children; everything it
-records stays on the device, it shows no ads, and it never asks a child for a
-name, an age or any other information. We do not knowingly collect personal
-information from children. Every ad shown anywhere in the app is requested with
-child-directed treatment, as described above.</p>
+<h2>9. Spoken lessons</h2>
+<p>Some Learn lessons are read aloud using your device’s own text-to-speech
+voice. Sahrora does not ask for the microphone, records nothing, and does not
+send the spoken text to us.</p>
 
-<h2>Deleting your account</h2>
-<p>You can delete your account from inside the app: <strong>You → Account → Delete account</strong>. That removes your sign-in and your profile (name and avatar), and deletes your notification tokens. A few records are kept <strong>without your name or any way to reach you</strong>: the coin ledger and coin wallet, your medals, your scores and the daily-limit counter, because they prevent rewards and free plays being claimed twice. You can also email us at the address below and we will help.</p>
+<h2>10. Purchases</h2>
+<p>Sahrora+ (a monthly or yearly subscription) and the one-time Remove Ads
+purchase are sold and paid through <strong>Apple</strong> (App Store) or
+<strong>Google</strong> (Google Play). We never see your card or payment details.
+Our purchase service, <strong>RevenueCat</strong>, receives the store’s receipt —
+which product, price and currency, dates, renewal status and the store’s
+transaction identifiers — together with a random customer ID, so the app knows
+what you have unlocked.</p>
 
-<h2>Who processes data for us</h2>
+<h2>11. Who handles data for us</h2>
 <ul>
-<li>Google Firebase — accounts, database, notifications (Cloud Messaging), analytics, crash reporting</li>
-<li>Google AdMob — advertising</li>
-<li>RevenueCat — subscription and purchase receipts</li>
-<li>Apple and Google — payment processing</li>
+<li><strong>Google Firebase</strong> — accounts (Authentication), database (Firestore and Realtime Database), server functions, notifications (Cloud Messaging), analytics, crash reporting, Remote Config and app installation IDs.</li>
+<li><strong>Google AdMob</strong> — advertising. Google also uses ad data for its own purposes, as described in section 5.</li>
+<li><strong>Google ML Kit</strong> — QR scanning on Android (diagnostics only, as described in section 8).</li>
+<li><strong>RevenueCat</strong> — subscription and purchase receipts.</li>
+<li><strong>Apple and Google</strong> — sign-in (if you choose it), payments and push delivery.</li>
+</ul>
+<p>These companies may process data in the United States, the European Union and
+other countries, under their own safeguards.</p>
+
+<h2>12. How long we keep data</h2>
+<ul>
+<li><strong>Rooms</strong> (and their entry in the list of public rooms): deleted automatically — within minutes of a room finishing or emptying, and in any case about two hours after its last activity.</li>
+<li><strong>Your profile, results, coins and friends</strong>: for as long as your account exists. Guest accounts do not expire on their own; delete them in the app or ask us.</li>
+<li><strong>Notification tokens</strong>: until you sign out, delete your account, or the token stops working.</li>
+<li><strong>Question and player reports</strong>: for as long as we need to review them and act on them.</li>
+<li><strong>Crash reports</strong>: Crashlytics keeps them for 90 days.</li>
+<li><strong>Analytics data</strong>: kept by Google Analytics for the retention period set in our account.</li>
+<li><strong>Purchase records</strong>: kept by Apple or Google, and by RevenueCat, as long as they need them for tax, accounting and refunds.</li>
+<li><strong>After you delete your account</strong>: some records are kept without your name, avatar or region — see section 13.</li>
+<li><strong>Data on your phone</strong>: until you delete the app or its data.</li>
 </ul>
 
-<h2>Contact</h2>
+<h2>13. Deleting your account and data</h2>
+<p>In the app: <strong>You → Account → Delete account</strong>. The button is
+there once you are signed in; if you play as a guest, first sign in with Google
+or Apple on the same screen (this keeps the same account), then delete — or
+email us.</p>
+<p><strong>What is deleted:</strong> your sign-in, your profile (display name,
+avatar, region, friend code), your notification tokens, your friends list, invites
+and rivals, and your name in other players’ friends lists. Your name, avatar and
+region are also removed from your kept score summary.</p>
+<p><strong>What is kept, and why:</strong> your coin balance and coin ledger,
+your medals, your game counters and your daily-limit counters are kept
+<strong>without your name or any way to reach you</strong>, linked only to a
+random identifier that no longer belongs to any sign-in. They stop rewards and
+free plays being claimed twice and keep past weekly results correct. Reports you
+made stay until reviewed, and purchase records stay with Apple, Google and
+RevenueCat as described above. Deleting your account does <strong>not</strong>
+cancel a subscription — cancel it in the App Store or Google Play.</p>
+<p>Without the app, or as a guest, you can ask by email. Full steps, and what to
+include, are on the <a href="/sahrora/support/#delete">support page</a>. We
+handle requests within 30 days.</p>
+
+<h2>14. Children</h2>
+<p>Sahrora is a party and quiz game for a general audience. How it treats
+children differs by platform:</p>
+<ul>
+<li><strong>iPhone and iPad:</strong> the Learn section includes a <strong>Kids</strong> world with simple lessons for young children, meant to be used with a grown-up. The Kids lessons ask a child for nothing — no name, no age, no contact details — store progress on the device only, and show no ads. Buying anything sits behind a grown-up check.</li>
+<li><strong>Android:</strong> Sahrora is meant for people aged <strong>13 and over</strong>, and the Kids lessons are not included.</li>
+</ul>
+<p>On both platforms, every ad is requested as child-directed and G-rated, as
+described in section 5. Rooms show the display names players choose, so a child
+should not use a real name. We do not knowingly collect personal information
+from children under 13 beyond what the app needs to run. If you believe a child
+has given us personal information — for example a real name as a display name —
+email us and we will delete it.</p>
+
+<h2>15. What we never do</h2>
+<ul>
+<li>We do not sell your personal data. Apart from Google’s advertising service described in section 5, we do not share it with other companies for their own purposes, and never with data brokers.</li>
+<li>We do not ask for your contacts, photos, microphone or precise location.</li>
+<li>We do not require your real name, and there is no free-text chat.</li>
+</ul>
+
+<h2>16. Your choices and rights</h2>
+<ul>
+<li>Change your name, avatar or region in <strong>You → Account</strong>.</li>
+<li>Turn notifications off, or the weekly reminder, in the app’s Settings or your phone’s settings.</li>
+<li>Reset your advertising ID (Android) or turn off tracking (iOS) as described in section 5.</li>
+<li>Ask us for a copy of your data, to correct it, or to delete some or all of it, by email. We answer within 30 days.</li>
+</ul>
+<p>Depending on where you live (for example under the GDPR in the EU and UK, or
+in California), you may have further rights, including complaining to your local
+data protection authority.</p>
+
+<h2>17. Changes to this policy</h2>
+<p>When we change this policy we update this page and the effective date at the
+top. If a change affects how your data is used, we will also say so in the app’s
+update notes.</p>
+
+<h2>18. Contact</h2>
 <p>Questions, or a request about your data:
 <a href="mailto:mohammad.sami.apps@gmail.com">mohammad.sami.apps@gmail.com</a>.</p>
+
+<footer>
+<a href="/sahrora/">Sahrora</a>
+<a href="/sahrora/support/">Support</a>
+<a href="/sahrora/terms/">Terms of Use</a>
+</footer>
+</section>
+
+<!-- ═══════════════════════════ ARABIC ═══════════════════════════ -->
+<section id="ar" data-lang="ar" lang="ar" dir="rtl">
+<h1>سياسة الخصوصية</h1>
+<p class="date">سهرورا (Sahrora: Quiz Night Party) · تاريخ السريان ١٦ أكتوبر ٢٠٢٦</p>
+
+<p>توضّح هذه السياسة ما يجمعه تطبيق سهرورا، ولماذا، ومن يتعامل معه غيرنا، وكم
+نحتفظ به، وكيف تحذفه. وهي تشمل سهرورا على آيفون وآيباد (App Store) وعلى أندرويد
+(Google Play). تطبيق سهرورا من تطوير محمد سامي («نحن»).</p>
+
+<div class="box">
+<p><strong>باختصار</strong></p>
+<ul>
+<li>يمكنك اللعب دون تسجيل؛ ينشئ التطبيق لك حسابًا مجهول الهوية.</li>
+<li>نحفظ اسمك الظاهر وصورتك الرمزية ومنطقتك ونتائجك وعملاتك على Google Firebase، لكي تعمل الغرف ويتبعك تقدّمك.</li>
+<li>تعرض النسخة المجانية إعلانات Google AdMob. كل طلب إعلان مُعلَّم بأنه موجَّه للأطفال ومحصور في المحتوى المناسب للجميع (G)، لذلك لا تكون الإعلانات في سهرورا مخصّصة لك.</li>
+<li>لا نستخدم GPS أبدًا، ولا نطلب جهات اتصالك أو صورك أو الميكروفون. الكاميرا لمسح رمز QR الخاص بالغرفة فقط، وعلى هاتفك.</li>
+<li>يمكنك حذف حسابك من داخل التطبيق أو بطلب عبر البريد. راجع <a href="/sahrora/support/#delete-ar">حذف بياناتك</a>.</li>
+</ul>
+</div>
+
+<h2>١. حسابك</h2>
+<p>عند فتح سهرورا لأول مرة ينشئ <strong>حسابًا مجهول الهوية</strong>: معرّفًا
+عشوائيًا لا يرتبط به بريد إلكتروني ولا رقم هاتف ولا اسم حقيقي. ويمكنك لعب
+التطبيق كله بهذه الطريقة.</p>
+<p>إذا اخترت تسجيل الدخول — عبر Google (آيفون وأندرويد) أو Apple (آيفون وآيباد
+فقط) — ليبقى تقدّمك عند تغيير الهاتف، فإن مزوّد تسجيل الدخول لدينا (Google
+Firebase Authentication) يحتفظ أيضًا بالاسم والبريد الإلكتروني اللذين تعطيهما
+Google أو Apple. تسجيل الدخول يُبقي الحساب نفسه، فلا تخسر شيئًا مما لعبته.</p>
+
+<h2>٢. ما نحفظه على خوادمنا</h2>
+<p>تُحفظ هذه البيانات لدى Google Firebase (Firestore وRealtime Database):</p>
+<ul>
+<li><strong>ملفك الشخصي</strong>: الاسم الظاهر الذي تكتبه (أو اسم طريف يقترحه التطبيق إلى أن تختار اسمك)، والصورة الرمزية التي تختارها من مجموعة التطبيق، ومنطقتك (بلدك). يرى اللاعبون الآخرون اسمك وصورتك الرمزية في الغرفة التي تجمعكم، ومنطقتك حيث يعرضها التطبيق.</li>
+<li><strong>نتائجك</strong>: عدد الألعاب والانتصارات والنقاط والأسئلة المُجابة والصحيحة وأفضل السلاسل والميداليات وما شابهها، لكي تعمل إحصاءاتك وتتبع حسابك. وإذا كانت لوحات الصدارة مفعّلة، يظهر اسمك الظاهر وصورتك الرمزية ومنطقتك بجانب نتيجتك.</li>
+<li><strong>العملات والحدود اليومية</strong>: رصيد عملاتك وسجلّ بما تكسبه وتنفقه، وعدّادات مثل عدد الغرف التي أنشأتها اليوم، كي لا تُطلب مكافأة أو لعبة مجانية مرتين.</li>
+<li><strong>الغرف</strong>: رمز الغرفة، ومن فيها (الاسم الظاهر والصورة الرمزية)، والنقاط، ومن هو جاهز، واختيارات «تحدّي الفرق»، والعبارات الجاهزة (مثل «استعدّوا!») والأصوات التي يرسلها اللاعبون. <strong>لا توجد دردشة نصية حرّة</strong>. الغرف خاصة افتراضيًا؛ وإذا جعل المضيف غرفته عامة، تظهر في قائمة الغرف المفتوحة مع اسم المضيف الظاهر ومنطقته. تُحذف الغرف تلقائيًا بعد انتهائها (راجع البند ١٢).</li>
+<li><strong>الأصدقاء</strong> (فقط حيث تكون هذه الميزة مفعّلة): رمز الصداقة المكوّن من ستة أحرف، وقائمة أصدقائك، وطلبات الصداقة، ودعوات الغرف.</li>
+<li><strong>بلاغات الأسئلة</strong>: إذا ضغطت «بلّغ عن السؤال» نحفظ السؤال المعني والسبب الذي اخترته واللغة ومعرّف حسابك العشوائي، لكي نصلح السؤال.</li>
+<li><strong>بلاغات اللاعبين</strong>: إذا أبلغت عن لاعب نحفظ معرّف حسابك العشوائي ومعرّف اللاعب المُبلَّغ عنه ورمز الغرفة والاسم الذي أبلغت عنه والوقت، لكي نتخذ إجراءً. لا تُعرض البلاغات على اللاعبين الآخرين، ولا يُخبَر اللاعب المُبلَّغ عنه بمن أبلغ عنه.</li>
+<li><strong>رموز الإشعارات</strong>: لكل هاتف تسمح فيه بالإشعارات، رمز توصيل مع نوع النظام ولغة التطبيق وما إذا كان التذكير الأسبوعي مفعّلًا.</li>
+</ul>
+
+<h2>٣. ما يبقى على هاتفك</h2>
+<p>تقدّمك في قسم <strong>تعلّم</strong> (النجوم والملصقات والمستويات والسلاسل
+وأفضل نتائجك)، وأفضل نتائجك في الأركيد واختياراتك للألعاب، وإعداداتك، وقائمة
+اللاعبين الذين <strong>حظرتهم</strong>، وسجلّ نشاط التطبيق — كلها محفوظة على
+جهازك فقط. الحظر لا ينتقل إلى هاتف جديد. ولا يغادر السجلّ هاتفك إلا إذا اخترت
+«مشاركة سجل التطبيق». الشيء الوحيد الذي يرسله قسم تعلّم هو العملات التي يمنحها،
+وتذهب إلى سجلّ العملات المذكور أعلاه.</p>
+
+<h2>٤. الموقع</h2>
+<p><strong>لا نستخدم GPS</strong>، وليس للتطبيق إذن بالوصول إلى الموقع. يقرأ
+سهرورا إعداد المنطقة في جهازك ليختار لغة التطبيق ويضع فئات الأسئلة الخاصة ببلدك
+أولًا. تُحفظ هذه المنطقة مع ملفك الشخصي وإحصاءاتك، ويمكنك تغييرها من
+<strong>حسابك ← الحساب</strong>.</p>
+<p>قد يستنتج Google AdMob وGoogle Firebase Analytics <strong>موقعًا
+تقريبيًا</strong> (مثل بلدك أو مدينتك) من عنوان الإنترنت (IP) الخاص بك. أما سهرورا
+نفسه فلا يطلب موقعك الدقيق ولا يحفظه أبدًا.</p>
+
+<h2>٥. الإعلانات</h2>
+<p>تعرض النسخة المجانية إعلانات من <strong>Google AdMob</strong>:</p>
+<ul>
+<li><strong>فيديوهات تختار مشاهدتها</strong> (إعلانات بمكافأة) — مثلًا لتلعب أكثر من الحد المجاني اليومي، أو لتفتح بعض فئات الأسئلة لمدة ٢٤ ساعة.</li>
+<li><strong>إعلانات بملء الشاشة في الاستراحات</strong> — مثلًا قبل جولة أركيد فردية أو بعدها، أو بعد انتهاء لعبة أو سباق في غرفة، أو عند الانضمام إلى غرفة. تختلف الأماكن بالضبط بين آيفون وأندرويد وقد تتغيّر.</li>
+<li><strong>إعلانات شريطية صغيرة</strong> قد تظهر في الشاشة الرئيسية وفي شاشة انتظار الغرفة وفي الإعدادات.</li>
+</ul>
+<p><strong>لا إعلانات إطلاقًا في قسم تعلّم</strong>، ولا إعلانات في منتصف سؤال.
+ويزيل اشتراك سهرورا+ وشراء «إزالة الإعلانات» لمرة واحدة الإعلاناتِ الشريطية
+والإعلانات بملء الشاشة.</p>
+
+<h3>طلبات إعلان موجّهة للأطفال ومناسبة للجميع</h3>
+<p>كل طلب إعلان يرسله سهرورا، على النظامين، مُعلَّم بأنه <strong>موجَّه
+للأطفال</strong> (وبأنه من مستخدم دون سن الموافقة) ومحصور في <strong>المحتوى
+المناسب للجميع (G)</strong>. وبسبب هذه العلامات لا تعرض Google إعلانات مخصّصة
+(مبنية على الاهتمامات) داخل سهرورا.</p>
+
+<h3>ما تتلقاه Google</h3>
+<p>لعرض الإعلانات وقياسها وحمايتها، تجمع حزمة Google Mobile Ads معلومات من جهازك،
+مثل عنوان IP (الذي يمكن تقدير موقع تقريبي منه)، ومعرّف الإعلانات ومعرّف مجموعة
+التطبيقات حيث يتوفران، ومعلومات الجهاز والتطبيق، وتفاعلك مع الإعلانات، وبيانات
+التشخيص. وتستخدمها Google وفق سياستها الخاصة للإعلان والتحليلات ومنع الاحتيال:
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>معرّف الإعلانات في أندرويد</h3>
+<p>على أندرويد، يمكن لحزمة Google Mobile Ads ولـ Google Firebase Analytics قراءة
+<strong>معرّف الإعلانات</strong> في جهازك. وبسبب علامة «موجَّه للأطفال» لا يُستخدم
+لتخصيص الإعلانات التي تراها في سهرورا. يمكنك إعادة ضبط معرّف الإعلانات أو حذفه في
+أي وقت من <strong>الإعدادات ← الخصوصية ← الإعلانات</strong> في أندرويد (وفي بعض
+الهواتف <strong>الإعدادات ← Google ← الإعلانات</strong>).</p>
+
+<h3>آيفون وآيباد: سؤال التتبّع</h3>
+<p>على iOS، يسألك سهرورا إن كنت تسمح بالتتبّع. إذا سمحت، قد تتلقى Google معرّف
+الإعلانات في جهازك مع طلبات الإعلانات، لقياس الإعلانات ومنع تكرار الإعلان نفسه؛
+وبسبب علامة «موجَّه للأطفال» لا يُستخدم لتخصيص الإعلانات. وإذا رفضت أو لم تُجب،
+لا يُشارَك المعرّف ولا يتغيّر شيء في التطبيق. يمكنك تغيير إجابتك في أي وقت من
+<strong>الإعدادات ← الخصوصية والأمن ← التتبّع</strong> في iOS.</p>
+
+<h3>الموافقة في أوروبا والمملكة المتحدة</h3>
+<p>حيث يشترط القانون ذلك (مثل المنطقة الاقتصادية الأوروبية والمملكة المتحدة
+وسويسرا)، يظهر نموذج الموافقة الخاص بـ Google قبل طلب أي إعلان. ويمكنك تغيير
+إجابتك لاحقًا من <strong>حسابك ← الإعدادات ← إدارة خيارات الخصوصية</strong>؛
+ويظهر هذا الخيار فقط حيث ينطبق.</p>
+<p>رأيت إعلانًا لا ينبغي أن يظهر؟ <strong>حسابك ← الإعدادات ← بلّغ عن
+إعلان</strong>.</p>
+
+<h2>٦. التحليلات وتقارير الأعطال</h2>
+<p>نستخدم <strong>Google Firebase Analytics</strong> لنفهم أي الميزات تُستخدم.
+يسجّل أحداثًا مثل «بدأت جولة» أو «انتهت لعبة»، مع لغة التطبيق ولغة الأسئلة، وما
+إذا كنت مشتركًا، وإجابتك عن سؤال التتبّع في iOS، وعدد الألعاب التي لعبتها تقريبًا
+(بفئات لا بعدد دقيق). وكأي تطبيق يستخدم Firebase يتلقى أيضًا معلومات الجهاز
+والتطبيق (الطراز وإصدار النظام وإصدار التطبيق)، ومعرّف نسخة التطبيق، وموقعًا
+تقريبيًا من عنوان IP، وعلى أندرويد معرّف الإعلانات. ولا يتلقى اسمك ولا بريدك ولا
+أي شيء تكتبه.</p>
+<p>نستخدم <strong>Google Firebase Crashlytics</strong> لاكتشاف الأعطال والأخطاء.
+يحتوي تقرير العطل على تفاصيل تقنية (طراز الجهاز وإصدار النظام وإصدار التطبيق وما
+كان التطبيق يفعله) ومعرّف حسابك العشوائي، لكي نربط العطل باللعبة التي سبّبته.</p>
+<p>نستخدم <strong>Google Firebase Remote Config</strong> لتغيير الإعدادات (مثل
+الميزات المفعّلة) دون تحديث للتطبيق. وعندما يجلبها التطبيق تتلقى Google معلومات
+أساسية عن الجهاز والتطبيق.</p>
+
+<h2>٧. الإشعارات</h2>
+<p>يرسل سهرورا الإشعارات فقط إذا سمحت بها. وهي نداءات من لاعبين آخرين في غرفة
+أنت فيها — مثل «نادِ الجميع» من المضيف، أو مناداة المضيف لك باسمك، أو عبارة
+جاهزة مثل «استعدّوا!» — وتذكير أسبوعي اختياري يبقى مطفأً ما لم تشغّله. ولإيصالها
+نحفظ رمز إشعارات لكل جهاز من أجهزتك (Google Firebase Cloud Messaging، وعلى آيفون
+عبر خدمة الإشعارات من Apple). يُحذف الرمز عند تسجيل الخروج أو حذف الحساب، ويُزال
+عندما يتوقف عن العمل. يمكنك إيقاف الإشعارات في أي وقت من إعدادات التطبيق، أو من
+<strong>الإعدادات ← الإشعارات ← Sahrora</strong> في iOS، أو من
+<strong>الإعدادات ← التطبيقات ← Sahrora ← الإشعارات</strong> في أندرويد.</p>
+
+<h2>٨. الكاميرا ورموز QR</h2>
+<p>تُستخدم الكاميرا لشيء واحد: مسح رمز QR الخاص بغرفة عندما تختار «امسح رمز
+QR». تُعالَج صور الكاميرا <strong>على هاتفك</strong> ولا تُرفع ولا تُحفظ
+أبدًا.</p>
+<ul>
+<li>على <strong>أندرويد</strong> يتم المسح بواسطة <strong>Google ML Kit</strong> (عبر خدمات Google Play) على الجهاز نفسه. قد يرسل ML Kit إلى Google معلومات أساسية عن الجهاز والتطبيق وإحصاءات استخدام وأداء — لا صور الكاميرا — للحفاظ على عمل الخدمة. وتقول Google إنها لا تشارك هذه البيانات مع أطراف ثالثة.</li>
+<li>على <strong>آيفون وآيباد</strong> يتم المسح بأدوات Apple المدمجة على الجهاز.</li>
+</ul>
+
+<h2>٩. الدروس المنطوقة</h2>
+<p>بعض دروس قسم تعلّم تُقرأ بصوت عالٍ باستخدام صوت تحويل النص إلى كلام الموجود
+في جهازك. لا يطلب سهرورا الميكروفون، ولا يسجّل شيئًا، ولا يرسل النص المنطوق
+إلينا.</p>
+
+<h2>١٠. المشتريات</h2>
+<p>يُباع سهرورا+ (اشتراك شهري أو سنوي) وشراء «إزالة الإعلانات» لمرة واحدة ويُدفع
+ثمنهما عبر <strong>Apple</strong> (App Store) أو <strong>Google</strong> (Google
+Play). لا نرى أبدًا بيانات بطاقتك أو الدفع. تتلقى خدمة المشتريات لدينا،
+<strong>RevenueCat</strong>، إيصال المتجر — المنتج والسعر والعملة والتواريخ وحالة
+التجديد ومعرّفات المعاملة لدى المتجر — مع معرّف عميل عشوائي، لكي يعرف التطبيق ما
+فتحته.</p>
+
+<h2>١١. من يتعامل مع البيانات نيابةً عنا</h2>
+<ul>
+<li><strong>Google Firebase</strong> — الحسابات (Authentication)، وقاعدة البيانات (Firestore وRealtime Database)، ووظائف الخادم، والإشعارات (Cloud Messaging)، والتحليلات، وتقارير الأعطال، وRemote Config، ومعرّفات تثبيت التطبيق.</li>
+<li><strong>Google AdMob</strong> — الإعلانات. وتستخدم Google بيانات الإعلانات أيضًا لأغراضها الخاصة كما في البند ٥.</li>
+<li><strong>Google ML Kit</strong> — مسح QR على أندرويد (للتشخيص فقط كما في البند ٨).</li>
+<li><strong>RevenueCat</strong> — إيصالات الاشتراكات والمشتريات.</li>
+<li><strong>Apple وGoogle</strong> — تسجيل الدخول (إن اخترته) والدفع وإيصال الإشعارات.</li>
+</ul>
+<p>قد تعالج هذه الشركات البيانات في الولايات المتحدة والاتحاد الأوروبي ودول أخرى،
+وفق ضماناتها الخاصة.</p>
+
+<h2>١٢. مدة الاحتفاظ بالبيانات</h2>
+<ul>
+<li><strong>الغرف</strong> (ومدخلها في قائمة الغرف العامة): تُحذف تلقائيًا — خلال دقائق من انتهاء الغرفة أو خلوّها، وفي كل الأحوال بعد نحو ساعتين من آخر نشاط فيها.</li>
+<li><strong>ملفك الشخصي ونتائجك وعملاتك وأصدقاؤك</strong>: ما دام حسابك موجودًا. حسابات الضيوف لا تنتهي من تلقاء نفسها؛ احذفها من التطبيق أو اطلب منا ذلك.</li>
+<li><strong>رموز الإشعارات</strong>: إلى أن تسجّل الخروج أو تحذف حسابك أو يتوقف الرمز عن العمل.</li>
+<li><strong>بلاغات الأسئلة واللاعبين</strong>: ما دمنا نحتاجها لمراجعتها واتخاذ إجراء بشأنها.</li>
+<li><strong>تقارير الأعطال</strong>: تحتفظ بها Crashlytics لمدة ٩٠ يومًا.</li>
+<li><strong>بيانات التحليلات</strong>: تحتفظ بها Google Analytics لمدة الاحتفاظ المضبوطة في حسابنا.</li>
+<li><strong>سجلات الشراء</strong>: تحتفظ بها Apple أو Google وRevenueCat ما دامت تحتاجها للضرائب والمحاسبة والاسترداد.</li>
+<li><strong>بعد حذف حسابك</strong>: تبقى بعض السجلات دون اسمك أو صورتك الرمزية أو منطقتك — راجع البند ١٣.</li>
+<li><strong>البيانات على هاتفك</strong>: إلى أن تحذف التطبيق أو بياناته.</li>
+</ul>
+
+<h2>١٣. حذف حسابك وبياناتك</h2>
+<p>من داخل التطبيق: <strong>حسابك ← الحساب ← حذف الحساب</strong>. يظهر الزر بعد
+تسجيل الدخول؛ وإذا كنت تلعب كضيف، سجّل الدخول أولًا عبر Google أو Apple من الشاشة
+نفسها (فيبقى الحساب نفسه) ثم احذفه — أو راسلنا بالبريد.</p>
+<p><strong>ما يُحذف:</strong> تسجيل دخولك، وملفك الشخصي (الاسم الظاهر والصورة
+الرمزية والمنطقة ورمز الصداقة)، ورموز الإشعارات، وقائمة أصدقائك ودعواتك ومنافسيك،
+واسمك من قوائم أصدقاء اللاعبين الآخرين. كما يُزال اسمك وصورتك الرمزية ومنطقتك من
+ملخص نتائجك المحفوظ.</p>
+<p><strong>ما يُحتفظ به ولماذا:</strong> رصيد عملاتك وسجلّها، وميدالياتك،
+وعدّادات ألعابك، وعدّادات الحد اليومي تبقى <strong>دون اسمك ودون أي وسيلة للوصول
+إليك</strong>، مرتبطة فقط بمعرّف عشوائي لم يعد يخص أي تسجيل دخول. فهي تمنع طلب
+المكافآت واللعب المجاني مرتين، وتحافظ على صحة نتائج الأسابيع الماضية. وتبقى
+البلاغات التي أرسلتها حتى تُراجَع، وتبقى سجلات الشراء لدى Apple وGoogle وRevenueCat
+كما ذُكر أعلاه. حذف حسابك <strong>لا</strong> يلغي الاشتراك — ألغِه من App Store
+أو Google Play.</p>
+<p>دون التطبيق، أو إن كنت ضيفًا، يمكنك الطلب عبر البريد. الخطوات كاملة وما يجب
+ذكره موجودة في <a href="/sahrora/support/#delete-ar">صفحة الدعم</a>. ننفّذ الطلبات
+خلال ٣٠ يومًا.</p>
+
+<h2>١٤. الأطفال</h2>
+<p>سهرورا لعبة سهرات وأسئلة لجمهور عام. ويختلف تعامله مع الأطفال حسب النظام:</p>
+<ul>
+<li><strong>آيفون وآيباد:</strong> يتضمن قسم تعلّم عالمًا <strong>للأطفال</strong> فيه دروس بسيطة للصغار، يُقصد استخدامه مع شخص بالغ. دروس الأطفال لا تطلب من الطفل شيئًا — لا اسم ولا عمر ولا بيانات تواصل — وتحفظ التقدّم على الجهاز فقط، ولا تعرض إعلانات. وأي شراء يتطلب تحققًا من شخص بالغ.</li>
+<li><strong>أندرويد:</strong> سهرورا مخصّص لمن هم في سن <strong>١٣ عامًا فأكثر</strong>، ولا يتضمن دروس الأطفال.</li>
+</ul>
+<p>على النظامين، يُطلب كل إعلان بوصفه موجَّهًا للأطفال ومناسبًا للجميع (G) كما في
+البند ٥. تعرض الغرف الأسماء الظاهرة التي يختارها اللاعبون، لذلك لا ينبغي للطفل
+استخدام اسمه الحقيقي. لا نجمع عن علم معلومات شخصية من أطفال دون ١٣ عامًا تتجاوز ما
+يحتاجه التطبيق ليعمل. وإذا اعتقدت أن طفلًا أعطانا معلومات شخصية — مثل اسم حقيقي
+كاسم ظاهر — راسلنا وسنحذفها.</p>
+
+<h2>١٥. ما لا نفعله أبدًا</h2>
+<ul>
+<li>لا نبيع بياناتك الشخصية. وباستثناء خدمة الإعلانات من Google الموضّحة في البند ٥، لا نشاركها مع شركات أخرى لأغراضها الخاصة، ولا مع وسطاء البيانات أبدًا.</li>
+<li>لا نطلب جهات اتصالك أو صورك أو الميكروفون أو موقعك الدقيق.</li>
+<li>لا نشترط اسمك الحقيقي، ولا توجد دردشة نصية حرّة.</li>
+</ul>
+
+<h2>١٦. خياراتك وحقوقك</h2>
+<ul>
+<li>غيّر اسمك أو صورتك الرمزية أو منطقتك من <strong>حسابك ← الحساب</strong>.</li>
+<li>أوقف الإشعارات أو التذكير الأسبوعي من إعدادات التطبيق أو إعدادات هاتفك.</li>
+<li>أعد ضبط معرّف الإعلانات (أندرويد) أو أوقف التتبّع (iOS) كما في البند ٥.</li>
+<li>اطلب منا عبر البريد نسخة من بياناتك أو تصحيحها أو حذف بعضها أو كلها. نردّ خلال ٣٠ يومًا.</li>
+</ul>
+<p>بحسب مكان إقامتك (مثل اللائحة العامة لحماية البيانات في الاتحاد الأوروبي
+والمملكة المتحدة، أو في كاليفورنيا)، قد تكون لك حقوق إضافية، منها تقديم شكوى إلى
+هيئة حماية البيانات المحلية.</p>
+
+<h2>١٧. التغييرات على هذه السياسة</h2>
+<p>عندما نغيّر هذه السياسة نحدّث هذه الصفحة وتاريخ السريان في أعلاها. وإذا أثّر
+التغيير على طريقة استخدام بياناتك، سنذكر ذلك أيضًا في ملاحظات تحديث التطبيق.</p>
+
+<h2>١٨. التواصل</h2>
+<p>لأي سؤال أو طلب بخصوص بياناتك:
+<a href="mailto:mohammad.sami.apps@gmail.com">mohammad.sami.apps@gmail.com</a>.</p>
+<p>في حال اختلاف بين النسختين، تُعتمد النسخة الإنجليزية.</p>
+
+<footer>
+<a href="/sahrora/">سهرورا</a>
+<a href="/sahrora/support/#ar">الدعم</a>
+<a href="/sahrora/terms/#ar">شروط الاستخدام</a>
+</footer>
+</section>
+
+<script>
+(function(){
+ var secs=document.querySelectorAll('section[data-lang]'),tabs=document.querySelectorAll('.langs a');
+ function pick(){
+  var h=decodeURIComponent(location.hash.slice(1));
+  if(h==='ar'||/-ar$/.test(h))return 'ar';
+  if(h)return 'en';
+  try{if(/^ar\b/i.test(navigator.language||''))return 'ar';}catch(e){}
+  return 'en';
+ }
+ function show(){
+  var l=pick(),i,h=location.hash.slice(1),t;
+  for(i=0;i<secs.length;i++)secs[i].hidden=secs[i].getAttribute('data-lang')!==l;
+  for(i=0;i<tabs.length;i++)tabs[i].setAttribute('aria-current',tabs[i].getAttribute('data-lang')===l?'true':'false');
+  document.documentElement.lang=l;
+  t=h&&document.getElementById(h);
+  if(t&&t.tagName!=='SECTION')t.scrollIntoView();
+ }
+ window.addEventListener('hashchange',show);show();
+})();
+</script>
 </div></body></html>

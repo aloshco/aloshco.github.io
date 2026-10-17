@@ -2,34 +2,45 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sahrora — party trivia, arcade and mental maths</title>
-<meta name="description" content="Sahrora is a party trivia and mini-game app with a mental-maths and colour-mixing learning track. Play
-solo, pass one phone around the room, or race friends.">
+<title>Sahrora — quiz night with friends</title>
+<meta name="description" content="Sahrora is a party quiz app: Quiz Night with friends in one room, each on their own phone, plus quick Arcade mini-games and a Learn section. English and Arabic.">
 <style>
  :root{color-scheme:dark}
  *{box-sizing:border-box}
- body{margin:0;background:#12101f;color:#f2f0ff;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+ body{margin:0;background:#12101f;color:#f2f0ff;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Arabic","Geeza Pro",sans-serif}
  .wrap{max-width:680px;margin:0 auto;padding:48px 20px 80px}
  h1{font-size:2.1rem;margin:0 0 .3em;letter-spacing:-.02em}
  h2{font-size:1.15rem;margin:2.2em 0 .5em;color:#c9c2ff}
  p{margin:0 0 1em}
  .lede{font-size:1.15rem;color:#bdb7d8}
  ul{padding-left:1.2em;margin:0 0 1em}
+ [dir=rtl] ul{padding-left:0;padding-right:1.2em}
+ [dir=rtl] h1{letter-spacing:0}
+ section[lang=ar]{font-size:1.05rem;line-height:1.85}
  li{margin:.35em 0}
  a{color:#a78bfa}
+ .langs{display:flex;gap:.5em;justify-content:flex-end;margin:0 0 1.5em}
+ .langs a{padding:.2em .85em;border:1px solid #2b2740;border-radius:999px;text-decoration:none;font-size:.95rem}
+ .langs a[aria-current=true]{background:#2b2740;color:#f2f0ff}
  footer{margin-top:3em;padding-top:1.5em;border-top:1px solid #2b2740;color:#8f89ab;font-size:.9rem}
- footer a{margin-right:1.2em;display:inline-block}
+ footer a{margin:0 1.2em 0 0;display:inline-block}
+ [dir=rtl] footer a{margin:0 0 0 1.2em}
 </style></head><body><div class="wrap">
+<nav class="langs" aria-label="Language"><a href="#en" data-lang="en">English</a><a href="#ar" data-lang="ar" lang="ar">العربية</a></nav>
+
+<!-- ═══════════════════════════ ENGLISH ═══════════════════════════ -->
+<section id="en" data-lang="en" lang="en" dir="ltr">
 <h1>Sahrora</h1>
-<p class="lede">Twenty-three arcade games to race your friends through, and a Learn
-world for kids and grown-ups — in English, Arabic, French and Spanish.</p>
+<p class="lede">Quiz night with your friends — everyone in one room, each on their
+own phone. Plus quick Arcade mini-games and a Learn section, in English, Arabic,
+French and Spanish.</p>
 
 <h2>What is in it</h2>
 <ul>
-<li><strong>Arcade</strong> — twenty-three short games, dealt ten at a time; play a run on your own or race friends through the same ten.</li>
-<li><strong>Rooms</strong> — start a room with one tap, share a code or a QR, and race everyone on their own phone.</li>
-<li><strong>Learn — Kids</strong> — six drawn worlds (numbers, colours, shapes, the clock, everyday life, puzzles), each lesson spoken aloud.</li>
-<li><strong>Learn — Grown-ups</strong> — fast maths, memory games and real-life drills. The first spots of every world are free, the rest is Sahrora+, and no Learn screen ever shows an ad.</li>
+<li><strong>Quiz Night</strong> — party trivia by category. Pick what you love and answer fastest, on your own or with friends. Categories are ordered for your country and region, and Party Mix deals a bit of everything.</li>
+<li><strong>Rooms</strong> — start a room with one tap, invite friends with a code, a link or a QR, and play together, each on your own phone.</li>
+<li><strong>Arcade</strong> — 19 short mini-games, dealt ten at a time. Play a run on your own or race friends through the same ten.</li>
+<li><strong>Learn</strong> — fast maths, memory games and real-life drills for grown-ups; on iPhone and iPad, also a Kids world of drawn lessons, each spoken aloud. No Learn screen ever shows an ad.</li>
 </ul>
 
 <h2>Languages</h2>
@@ -37,13 +48,69 @@ world for kids and grown-ups — in English, Arabic, French and Spanish.</p>
 French and Spanish.</p>
 
 <h2>Price</h2>
-<p>Free to play, with ads around the Arcade and none in Learn. An optional
+<p>Free to play, with ads around the games and none in Learn. An optional
 Sahrora+ subscription removes the ads, lifts the daily limits, lets you pick
-your own arcade mix and opens every lesson; a one-off purchase removes the ads
-on their own. Nothing in the game is paywalled mid-play.</p>
+your own Arcade mix and opens every lesson; a one-off purchase removes the ads
+on their own. Nothing is paywalled in the middle of a game.</p>
 
 <footer>
 <a href="/sahrora/privacy/">Privacy policy</a>
 <a href="/sahrora/support/">Support</a>
+<a href="/sahrora/terms/">Terms of Use</a>
+<a href="/sahrora/support/#delete">Delete your data</a>
 </footer>
+</section>
+
+<!-- ═══════════════════════════ ARABIC ═══════════════════════════ -->
+<section id="ar" data-lang="ar" lang="ar" dir="rtl">
+<h1>سهرورا</h1>
+<p class="lede">سهرة أسئلة مع أصحابك — الكل في غرفة واحدة، وكل واحد على هاتفه.
+ومعها ألعاب «أركيد» صغيرة سريعة وقسم «تعلّم»، بالعربية والإنجليزية والفرنسية
+والإسبانية.</p>
+
+<h2>ماذا فيه</h2>
+<ul>
+<li><strong>سهرة أسئلة</strong> — أسئلة للسهرات حسب الفئات. اختر ما تحبه وجاوب أسرع من الكل، وحدك أو مع أصحابك. تُرتَّب الفئات حسب بلدك ومنطقتك، و«خلطة السهرة» تجمع لك من كل شيء.</li>
+<li><strong>الغرف</strong> — افتح غرفة بضغطة واحدة، وادعُ أصحابك برمز أو رابط أو رمز QR، والعبوا معًا كلٌّ على هاتفه.</li>
+<li><strong>أركيد</strong> — ١٩ لعبة صغيرة قصيرة، تأتيك عشرٌ منها في كل جولة. العب جولة وحدك أو تسابق مع أصحابك في العشر نفسها.</li>
+<li><strong>تعلّم</strong> — حساب سريع وألعاب ذاكرة وتمارين من الحياة اليومية للكبار؛ وعلى آيفون وآيباد أيضًا عالم للأطفال فيه دروس مرسومة تُقرأ بصوت عالٍ. ولا تظهر أي إعلانات في قسم تعلّم أبدًا.</li>
+</ul>
+
+<h2>اللغات</h2>
+<p>كل شاشة مترجمة إلى العربية (من اليمين إلى اليسار بالكامل) والإنجليزية
+والفرنسية والإسبانية.</p>
+
+<h2>السعر</h2>
+<p>مجاني، مع إعلانات حول الألعاب ولا إعلانات في قسم تعلّم. اشتراك سهرورا+
+الاختياري يزيل الإعلانات، ويرفع الحدود اليومية، ويتيح لك اختيار ألعاب «أركيد»
+بنفسك، ويفتح كل الدروس؛ وهناك شراء لمرة واحدة يزيل الإعلانات وحدها. لا شيء يُقفل
+بالدفع في منتصف اللعبة.</p>
+
+<footer>
+<a href="/sahrora/privacy/#ar">سياسة الخصوصية</a>
+<a href="/sahrora/support/#ar">الدعم</a>
+<a href="/sahrora/terms/#ar">شروط الاستخدام</a>
+<a href="/sahrora/support/#delete-ar">حذف بياناتك</a>
+</footer>
+</section>
+
+<script>
+(function(){
+ var secs=document.querySelectorAll('section[data-lang]'),tabs=document.querySelectorAll('.langs a');
+ function pick(){
+  var h=decodeURIComponent(location.hash.slice(1));
+  if(h==='ar'||/-ar$/.test(h))return 'ar';
+  if(h)return 'en';
+  try{if(/^ar\b/i.test(navigator.language||''))return 'ar';}catch(e){}
+  return 'en';
+ }
+ function show(){
+  var l=pick(),i;
+  for(i=0;i<secs.length;i++)secs[i].hidden=secs[i].getAttribute('data-lang')!==l;
+  for(i=0;i<tabs.length;i++)tabs[i].setAttribute('aria-current',tabs[i].getAttribute('data-lang')===l?'true':'false');
+  document.documentElement.lang=l;
+ }
+ window.addEventListener('hashchange',show);show();
+})();
+</script>
 </div></body></html>
